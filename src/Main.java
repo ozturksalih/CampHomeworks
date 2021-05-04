@@ -16,7 +16,7 @@ public class Main {
 		gamer.Add(salih);
 		
 		SaleManager sale = new SaleManager();
-		sale.buy(salih, gta , null);
+		sale.buy(salih, gta , discount);
 		
 		
 		
