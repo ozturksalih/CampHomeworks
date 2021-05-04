@@ -10,7 +10,6 @@ public class Discount implements Entity{
 	}
 
 	public Discount(int id, int gameId, int discountPercentage) {
-		super();
 		this.id = id;
 		this.gameId = gameId;
 		this.discountPercentage = discountPercentage;

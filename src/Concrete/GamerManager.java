@@ -16,8 +16,12 @@ public class GamerManager implements GamerService {
 
 	@Override
 	public void Add(Gamer gamer) {
-		validationService.Validate(gamer);
-		
+		boolean result = validationService.Validate(gamer);
+		if(result) {
+			System.out.println(gamer.getFirstName()+" dogrulandi");
+		}else {
+			System.out.println(gamer.getFirstName() + " icin dogrulama basarisiz");
+		}
 	}
 
 

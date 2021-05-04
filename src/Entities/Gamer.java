@@ -1,31 +1,28 @@
 package Entities;
-import java.util.Date;
 
-public class Gamer extends User{
-	private int nationalId ;
-	private int userId;
+public class Gamer{
+	private String nationalId ;
 	private String firstName;
 	private String lastName;
-	private Date dateOfBirth;
+	private int dateOfBirth ;
 	
 	public Gamer() {
-		super();
+		
 	}
 
-	public Gamer(int nationalId, int userId, String email , String password,String firstName, String lastName, Date dateOfBirth) {
-		super(userId,email , password);
+	public Gamer(String nationalId, String firstName, String lastName, int dateOfBirth) {
+		
 		this.nationalId = nationalId;
-		this.userId = userId;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.dateOfBirth = dateOfBirth;
 	}
 
-	public int getNationalId() {
+	public String getNationalId() {
 		return nationalId;
 	}
 
-	public void setNationalId(int nationalId) {
+	public void setNationalId(String nationalId) {
 		this.nationalId = nationalId;
 	}
 
@@ -45,22 +42,14 @@ public class Gamer extends User{
 		this.lastName = lastName;
 	}
 
-	public Date getDateOfBirth() {
+	public int getDateOfBirth() {
 		return dateOfBirth;
 	}
 
-	public void setDateOfBirth(Date dateOfBirth) {
+	public void setDateOfBirth(int dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
 
-	public int getUserId() {
-		return userId;
-	}
-
-	public void setUserId(int userId) {
-		this.userId = userId;
-	}
-	
 	
 	
 }

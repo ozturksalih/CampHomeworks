@@ -1,9 +1,9 @@
 package Abstract;
 
-import Entities.User;
+import Entities.*;
 
 public interface ValidationService {
 	
-	void Validate(User user);
+	boolean Validate(Gamer gamer);
 	
 }

@@ -6,4 +6,6 @@ public interface DiscountService {
 	void get(Discount discount);
 	void update(Discount discount);
 	void delete(Discount discount);
+	
+	//CRUD CREATE READ UPDATE DELETE
 }

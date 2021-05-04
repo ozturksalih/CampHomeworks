@@ -11,13 +11,14 @@ public class SaleManager implements SaleService{
 	public void buy(Gamer gamer, Game game , Discount discount) {
 		System.out.println(
 				gamer.getFirstName() + " buyed " +
-				game.getGameName() + " game " + 
+				game.getGameName() + 
 				(discount == null ? 
-				game.getPrice():  
+				(game.getPrice() +"$"):  
 				("with "+ discount.getDiscountPercentage()+"% discount for " +
-				(game.getPrice() - 
-				(discount.getDiscountPercentage()* game.getPrice())/100 ))+"$" )
+				(game.getPrice() -(discount.getDiscountPercentage()* game.getPrice())/100 )
+				)+"$" )
 				);
+		
 		
 	}
 

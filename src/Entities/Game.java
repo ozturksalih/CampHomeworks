@@ -9,7 +9,7 @@ public class Game implements Entity{
 		
 	}
 	public Game(int id, String gameName, int price) {
-		super();
+		
 		this.id = id;
 		this.gameName = gameName;
 		this.price = price;
